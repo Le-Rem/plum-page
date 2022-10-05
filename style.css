@@ -2,16 +2,17 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    color: #ccc;
 }
 @font-face {
     font-family: defaultFont;
     src: url(Rubik-Regular.ttf);
 }
 :root {
+    --white: #ccc;
     --dark1: #181818;
     --dark2: #222;
-    --col  : rgb(75, 38, 49);
+    --col  : rgb(97, 47, 47);
+    --col2 : rgb(56, 29, 30);
   }
 
 
@@ -21,6 +22,10 @@ body{
     padding: 8px;
     margin: 4px;
     background-color: var(--dark2);
+    color: var(--white);
+}
+a{
+    color: var(--white);
 }
 
 .content{
@@ -95,6 +100,9 @@ body{
             display: inline-block;
             */
         }
+        .download-item:hover{
+            background-color: var(--col2);
+        }
 
 .contact{
     width: 95%;
@@ -105,6 +113,14 @@ body{
 }
     .contact-item{
         margin: 8px 16px;
+
+    }
+    a.contact-text{
+        color: var(--white);
+    }
+    a.contact-text:hover{
+        color: var(--col);
+        /* background-color: var(--dark1); */
     }
     
 .center{
