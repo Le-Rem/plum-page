@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #ccc;
+}
+@font-face {
+    font-family: defaultFont;
+    src: url(Rubik-Regular.ttf);
+}
+:root {
+    --dark1: #181818;
+    --dark2: #222;
+    --col  : rgb(75, 38, 49);
+  }
+
+
+body{
+    font-family: defaultFont;
+    font-size: 22px;
+    padding: 8px;
+    margin: 4px;
+    background-color: var(--dark2);
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 16px;
+    background-color: var(--dark2);
+}
+    .info-panel{
+        border:0px solid #ccc;
+        border-radius: 8px;
+        min-width: 35%;
+        background-color: var(--dark2);
+        margin: 10px 10px 50px
+    }
+        h1{/*Main title*/
+            padding: 16px;
+            text-align: center;
+            font-size: 52px;
+        }
+        img{
+            width: 250;
+            height: 250;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .desc{
+            font-size: 28;
+            margin: 16px;
+        }
+    .download-panel{
+        min-width: 35%;
+        border:0px solid #ccc;
+        height: 320px;
+        border-radius: 8px;
+        background-color: var(--dark1);
+        align-self: center;
+    }
+        .download-title{
+            background-color: var(--dark1);
+            width: 100px;
+            margin: 16px 18px;
+        }
+        .download-div{
+            background-color: var(--dark1);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /*text-align: center;
+            margin-left: auto;
+            justify-content:flex-end;
+            margin-right: auto;*/
+            
+        }
+        .download-item{
+            background-color: var(--col);
+            width: auto;
+            border:0px solid #ccc;
+            word-wrap: break-word;
+            padding: 16px;
+            margin: 10px 50px;
+            border-radius: 8px;
+            font-size: 16px;
+            /*min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            height: 64px;
+            display: inline-block;
+            */
+        }
+
+.contact{
+    width: 95%;
+    min-height: 32px;
+    font-size: 18px;
+    display: flex;
+    justify-content:right;
+}
+    .contact-item{
+        margin: 8px 16px;
+    }
+    
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
