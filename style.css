@@ -9,8 +9,8 @@
 }
 :root {
     --white: #ccc;
-    --dark1: #181818;
-    --dark2: #222;
+    --dark1: #0c0a0a77;/*#181818*/
+    --dark2: #191919;/*#222*/
     --col  : rgb(97, 47, 47);
     --col2 : rgb(56, 29, 30);
   }
@@ -23,6 +23,9 @@ body{
     margin: 4px;
     background-color: var(--dark2);
     color: var(--white);
+    background-image: url('bg.jpg');
+    background-size: 100% auto;
+    background-repeat:no-repeat;
 }
 a{
     color: var(--white);
@@ -34,13 +37,13 @@ a{
     flex-wrap: wrap;
     margin: auto;
     padding: 16px;
-    background-color: var(--dark2);
+    /* background-color: var(--dark2); */
 }
     .info-panel{
         border:0px solid #ccc;
         border-radius: 8px;
         min-width: 35%;
-        background-color: var(--dark2);
+        /* background-color: var(--dark2); */
         margin: 10px 10px 50px
     }
         h1{/*Main title*/
@@ -63,17 +66,17 @@ a{
         min-width: 35%;
         border:0px solid #ccc;
         height: 320px;
-        border-radius: 8px;
+        border-radius: 24px;
         background-color: var(--dark1);
         align-self: center;
     }
         .download-title{
-            background-color: var(--dark1);
+            /* background-color: var(--dark1); */
             width: 100px;
             margin: 16px 18px;
         }
         .download-div{
-            background-color: var(--dark1);
+            /* background-color: var(--dark1); */
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
