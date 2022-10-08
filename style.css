@@ -25,7 +25,7 @@ body{
     color: var(--white);
     background-image: url('bg.jpg');
     background-size: 100% auto;
-    background-repeat:no-repeat;
+    /* background-repeat:no-repeat; */
 }
 a{
     color: var(--white);
@@ -36,7 +36,7 @@ a{
     text-align: center;
     flex-wrap: wrap;
     margin: auto;
-    padding: 16px;
+    padding: 8px;
     /* background-color: var(--dark2); */
 }
     .info-panel{
