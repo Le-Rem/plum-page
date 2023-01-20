@@ -9,6 +9,7 @@
 }
 :root {
     --white: #ccc;
+    --whiteTransparent: #ccc6;
     --dark1: #0c0a0a77;/*#181818*/
     --dark2: #191919;/*#222*/
     --col  : rgb(97, 47, 47);
@@ -106,6 +107,22 @@ a{
         .download-item:hover{
             background-color: var(--col2);
         }
+    .download-help{
+        word-wrap: break-word;
+        padding: 16px;
+        background-color: var(--whiteTransparent);
+        color: var(--dark2);
+        font-size: 16px;
+        margin: 16px 50px;
+        border-radius: 4px;
+        min-height:25px;
+        position: absolute;
+        /* transform: translateX(-25%) translateY(50%); */
+        display: none;
+    }
+    .download-panel:hover .download-help{
+        display: block;
+    }
 
 .contact{
     width: 95%;
